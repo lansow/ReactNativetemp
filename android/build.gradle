@@ -1,22 +1,22 @@
 buildscript {
     ext {
-        buildToolsVersion = "36.0.0"
+        buildToolsVersion = "35.0.0"
         minSdkVersion = 24
-        compileSdkVersion = 36
-        targetSdkVersion = 36
+        compileSdkVersion = 35
+        targetSdkVersion = 35
         ndkVersion = "27.1.12297006"
-        kotlinVersion = "2.1.20"
+        kotlinVersion = "2.0.21"
     }
+
     repositories {
         google()
         mavenCentral()
-        // اگر لازم شد: mavenLocal()
     }
+
     dependencies {
-        // نسخه‌های مشخص برای offline build
-        classpath("com.android.tools.build:gradle:8.12.0")
-        classpath("com.facebook.react:react-native-gradle-plugin:0.9.12")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.20")
+        classpath("com.android.tools.build:gradle:8.6.0")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
     }
 }
 
@@ -24,7 +24,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        // mavenLocal() اگه بسته‌ها رو محلی داری
     }
 }
 
